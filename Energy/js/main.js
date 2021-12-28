@@ -1,5 +1,30 @@
 $(document).ready(function() {
 
+  //Выезжающее меню
+  $(window).scroll(function() {
+    const scrollMenu = $('.header').offset().top;
+    const scrolled = $(this).scrollTop();
+      if (scrolled > 1) {
+        if (window.matchMedia('(min-width: 1024px)').matches) {
+          $('.header').addClass('fixed');
+        }
+      } else if (scrolled < 1) {
+        $('.header').removeClass('fixed');
+      }
+  });
+
+  //menuHamburger
+  $('.menu-toggle').click(function(){
+    $(this).toggleClass('open');
+    $('.header__navigation').toggleClass('_active');
+    $('body').toggleClass('_no-scroll');
+  })
+
+  $('.header__btn-close').click(function(){
+    $('.header__navigation._active').toggleClass('_active');
+    $('body').removeClass('_no-scroll');
+  })
+
   //FancyBox
   $(".fancybox").fancybox();
 
@@ -23,6 +48,7 @@ $(document).ready(function() {
     }
   });
 
+
 });
 
 
@@ -43,20 +69,6 @@ $(document).ready(function() {
         $('.bottom-header__menu').removeClass('active');
       }
   });
-
-  //menuHamburger
-  $('.menu-toggle').click(function(){
-    $(this).toggleClass('open');
-    $('.bottom-header').toggleClass('_active');
-    $('body').toggleClass('_no-scroll');
-    $('.top-btn').toggleClass('_disabled');
-    $('.top-header').toggleClass('_active');
-  })
-
-
-
-
-
   //Кнопка вверх
   var button = $('.top-btn');	
   $(window).scroll (function () {
