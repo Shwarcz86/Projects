@@ -43,11 +43,15 @@ $(document).ready(function() {
     $(this).addClass('tab_active'); 
     $($(this).attr('href')).addClass('tabs-content_active');
 
-    if (window.matchMedia('(max-width: 580px)').matches) { // аналог media-queries
-      $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top - 85 +'px'});
-    }
   });
 
+  if (window.matchMedia('(max-width: 1330px)').matches) { // аналог media-queries
+    $('.tab.main-page__item').removeClass('tab_active');
+    $('.tab').on('click', function(e) { 
+      e.preventDefault();
+      $('.tab.main-page__item').removeClass('tab_active');
+    });
+  }
 
 });
 
