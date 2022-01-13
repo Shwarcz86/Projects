@@ -548,6 +548,9 @@
   // .order-page__title
   &__title {
     margin: 0px 0px 110px 0px;
+    span {
+      white-space: nowrap;
+    }
   }
   // .order-page__items
   &__items {
