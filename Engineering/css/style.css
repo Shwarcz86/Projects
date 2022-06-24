@@ -53,6 +53,17 @@ select {
 a {
   text-decoration: none;
 }
+/*///////////////////////////////////DEMO-DELETE//////////////////////////////////*/
+.page .content {
+  padding: 300px 0 100px;
+}
+.page .content li {
+  padding: 10px 0;
+}
+.page .content li a {
+  font-size: 24px;
+  color: #2a579c;
+} 
 /*///////////////////////////////////GLOBAl////////////////////////////////////*/
 html,
 body {
