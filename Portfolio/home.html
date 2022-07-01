@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220701141439">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="cursor"></div>
+	<div class="follower"></div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a class="logo" href="#">
+					<img src="img/svg/logo.svg" alt="">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item link"><a class="menu__link" href="#" data-goto="#about">About</a></li>
+							<li class="menu__item link"><a class="menu__link" href="#" data-goto="#projects">Projects</a></li>
+							<li class="menu__item link"><a class="menu__link" href="#" data-goto="#reviews">Reviews</a></li>
+							<li class="menu__item link"><a class="menu__link" href="#" data-goto="#contacts">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="main">
+				<div class="main__container">
+					<div class="main__item">
+						<h1 class="main__title">Michael <br>Scofield</h1>
+						<div class="main__subtitle">Fullstack web developer</div>
+						<div class="main__info">
+							<div class="main__info-item">UI / UX Design</div>
+							<div class="main__info-item">QA Testing</div>
+							<div class="main__info-item">Mobile Apps</div>
+							<div class="main__info-item">Web development</div>
+						</div>
+					</div>
+					<div class="main__item main__item_canvas">
+						<canvas id="canvasOne" width="550" height="550">
+							Your browser does not support HTML5 canvas.
+						</canvas>
+					</div>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div class="about__container">
+					<div class="about__subtitle subtitle">About</div>
+					<h2 class="about__title title">History of my development:</h2>
+					<div class="about__items">
+						<div class="about__item">
+							<div class="about__num">2015</div>
+							<div class="about__text">First project. Blog for the teacher</div>
+						</div>
+						<div class="about__item">
+							<div class="about__num">2016</div>
+							<div class="about__text">Development of the first mobile application</div>
+						</div>
+						<div class="about__item">
+							<div class="about__num">2017</div>
+							<div class="about__text">The portfolio includes over 100 projects</div>
+						</div>
+						<div class="about__item">
+							<div class="about__num">2018</div>
+							<div class="about__text">First international project</div>
+						</div>
+						<div class="about__item">
+							<div class="about__num">2019</div>
+							<div class="about__text">Launching a personal web development course</div>
+						</div>
+						<div class="about__item">
+							<div class="about__num">2020+</div>
+							<div class="about__text">Started working in Google</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="projects" id="projects">
+				<div class="projects__container">
+					<div class="projects__subtitle subtitle">Projects</div>
+					<h2 class="projects__title title">100+ projects on different topics:</h2>
+					<div data-tabs class="projects__tabs">
+						<nav data-tabs-titles class="projects__tabs-navigation">
+							<button class="projects__tabs-title link _tab-active" type="button">Blogs</button>
+							<button class="projects__tabs-title link" type="button">CRM</button>
+							<button class="projects__tabs-title link" type="button">Educational platform</button>
+							<button class="projects__tabs-title link" type="button">Banking applications</button>
+							<button class="projects__tabs-title link" type="button">Mobile applications</button>
+							<button class="projects__tabs-title link" type="button">Mobile games</button>
+							<button class="projects__tabs-title link" type="button">Social networks</button>
+						</nav>
+						<div data-tabs-body class="projects__tabs-content">
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">Blogs</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">CRM</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">Educational platform</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">Banking applications</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">Mobile applications</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">Mobile games</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="projects__tabs-body">
+								<div class="projects__tabs-inner">
+									<div class="projects__tabs-text">Social networks</div>
+									<div data-spollers data-one-spoller class="projects__tabs-spollers spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title _spoller-active">Blog 1</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 2</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Blog 3</button>
+											<div class="spollers__body">some kind of link to the site</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact" id="contacts">
+				<div class="contact__container">
+					<div class="contact__body">
+						<div class="contact__title title">Write to me and I will answer within the next 24 hours</div>
+						<a class="contact__btn" href="#" data-popup="#popup">Discuss the project</a>
+					</div>
+				</div>
+			</section>
+			<section class="reviews" id="reviews">
+				<div class="reviews__container">
+					<div class="reviews__subtitle subtitle">Reviews</div>
+					<h2 class="reviews__title title">What my clients say about me:</h2>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-img">
+									<picture><source srcset="img/slide-1.webp" type="image/webp"><img src="img/slide-1.png" alt="img"></picture>
+								</div>
+								<div class="reviews__slide-title">Lincoln Burrows</div>
+								<div class="reviews__slide-text">
+									Thanks to Michael for doing everything efficiently on time and without broaches. I recommend this specialist for work. Special thanks to Michael for the work that was not included in the original.
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-img">
+									<picture><source srcset="img/slide-2.webp" type="image/webp"><img src="img/slide-2.png" alt="img"></picture>
+								</div>
+								<div class="reviews__slide-title">Gretchen Morgan</div>
+								<div class="reviews__slide-text">
+									Thank you very much for your work, the project was completed very quickly and efficiently. I recommend it as a reliable performer! I will contact you in the future.
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-img">
+									<picture><source srcset="img/slide-3.webp" type="image/webp"><img src="img/slide-3.png" alt="img"></picture>
+								</div>
+								<div class="reviews__slide-title">Paul Kellerman</div>
+								<div class="reviews__slide-text">
+									The performer who specifically understands the task. Very cool and easy to communicate. I did an excellent job, I will contact you. I advise everyone!
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__control control-reviews">
+						<div class="control-reviews__btn control-reviews__btn_prev">
+							<img src="img/svg/arrow-left.svg" alt="">
+						</div>
+						<div class="control-reviews__btn control-reviews__btn_next">
+							<img src="img/svg/arrow-right.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__item">
+					<div class="footer__title">
+						Calculate the timing and cost of <br> your project
+					</div>
+					<div class="footer__subtitle">Leave your phone number for communication</div>
+					<form class="footer__form" action="#">
+						<input class="footer__form-input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Name">
+						<input class="footer__form-input" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Phone">
+						<textarea class="footer__form-textarea" placeholder="Message"></textarea>
+						<button class="footer__form-btn link" type="submit">Discuss the project</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/svg/close.svg" alt="">
+				</button>
+				<div class="popup__title">
+					Сontact me:
+				</div>
+				<form action="#">
+					<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Name">
+					<textarea placeholder="Message"></textarea>
+					<button type="submit" class="button">Discuss the project</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js?_v=20220701141439"></script>
+	<script src="js/app.min.js?_v=20220701141439"></script>
+</body>
+
+</html>
