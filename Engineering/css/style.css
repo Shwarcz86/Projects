@@ -55,6 +55,7 @@ a {
 }
 /*///////////////////////////////////DEMO-DELETE//////////////////////////////////*/
 .page .content {
+<<<<<<< HEAD
     padding: 300px 0 100px;
   }
   .page .content li {
@@ -64,6 +65,17 @@ a {
     font-size: 24px;
     color: #2a579c;
   } 
+=======
+  padding: 300px 0 200px;
+}
+.page .content li {
+  padding: 10px 0;
+}
+.page .content li a {
+  font-size: 24px;
+  color: #2a579c;
+} 
+>>>>>>> c89b884ad4406efccc6b559df5f851eaf7030b2c
 /*///////////////////////////////////GLOBAl////////////////////////////////////*/
 html,
 body {
