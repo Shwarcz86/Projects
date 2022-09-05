@@ -2236,7 +2236,6 @@ article img {
 /*///////////////////////////////////////portfolio//////////////////////////////////////////*/
 .page__portfolio {
   padding: 155px 0 40px;
-  height: calc(100vh - 200px);
 } 
 .portfolio-page {
   background: url('../img/article-bg.jpg') 0 0 no-repeat;
@@ -2319,7 +2318,6 @@ article img {
 /*///////////////////////////////////contacts///////////////////////////////////////*/
 .page__contacts {
   padding: 155px 0 40px;
-  height: calc(100vh - 200px);
 }
 .contacts-page {
   background: url('../img/article-bg.jpg') 0 0 no-repeat;
