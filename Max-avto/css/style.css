@@ -1229,7 +1229,6 @@ font-family: 'Inter', sans-serif;
   justify-content: space-between;
 }
 .footer__middle {
-  border-bottom: 1px solid #d9d9da;
   padding: 0px 0px 35px 0px;
   margin: 0px 0px 35px 0px;
 }
