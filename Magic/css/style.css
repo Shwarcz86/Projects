@@ -2127,6 +2127,8 @@ body._no-scroll:before {
   background: url('../img/about-bg.jpg') 0 0 no-repeat;
   background-size: cover;
   padding: 55px 0 80px;
+  height: calc(100vh - 300px);
+
 }
 .page__about-inner {
   display: flex;
