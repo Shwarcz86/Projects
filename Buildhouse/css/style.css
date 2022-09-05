@@ -78,6 +78,7 @@ body._no-scroll {
 }
 .page {
 	flex: 1 0 auto;
+    background-color: #0f243c;
 }
 .footer {
 	flex: 0 0 auto;
@@ -647,7 +648,7 @@ article img {
 }
 .page .content li a {
   font-size: 24px;
-  color: #2a579c;
+  color: #fff;
 } 
 /*///////////////////////////////////FONTS///////////////////////////////////////*/
 /*Light 300*/
@@ -1574,6 +1575,7 @@ article img {
 /*///////////////////////////////////contacts///////////////////////////////////////*/
 .page__contacts {
   padding: 50px 0 40px;
+  height: 100%;
 }
 .contacts-page {
   background-color: #101d2d;
