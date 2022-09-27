@@ -999,6 +999,10 @@ body::after {
   background-color: gray;
 }
 
+[class$='-copyrights-pane'] {
+  display: none;
+}
+
 .main-slider {
   padding-top: 15rem;
   position: relative;
