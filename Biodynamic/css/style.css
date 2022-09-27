@@ -1003,6 +1003,10 @@ body::after {
   background-color: gray;
 }
 
+[class$='-copyrights-pane'] {
+  display: none;
+}
+
 .main-slider {
   padding-top: 15rem;
   position: relative;
@@ -2491,6 +2495,17 @@ body::after {
     color: #1d24b1;
   }
 
+<<<<<<< HEAD
+=======
+  /*
+  .options-rehabilitation:hover {
+    -webkit-transform: translateY(-1.25rem);
+        -ms-transform: translateY(-1.25rem);
+            transform: translateY(-1.25rem);
+  }
+  */
+
+>>>>>>> 33c79efc2df09322c6fa9a2d0870a10029fa44a8
   .body-features__item:hover {
     -webkit-transform: translateY(-0.9375rem);
         -ms-transform: translateY(-0.9375rem);
