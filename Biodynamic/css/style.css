@@ -400,6 +400,10 @@ body::after {
   transition: background-color 0.3s ease 0s;
 }
 
+[class$=-copyrights-pane] {
+  display: none;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -2485,12 +2489,6 @@ body::after {
 
   .body-footer__phone:hover {
     color: #1d24b1;
-  }
-
-  .options-rehabilitation:hover {
-    -webkit-transform: translateY(-1.25rem);
-        -ms-transform: translateY(-1.25rem);
-            transform: translateY(-1.25rem);
   }
 
   .body-features__item:hover {
