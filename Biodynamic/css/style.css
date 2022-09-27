@@ -2487,11 +2487,13 @@ body::after {
     color: #1d24b1;
   }
 
+  /*
   .options-rehabilitation:hover {
     -webkit-transform: translateY(-1.25rem);
         -ms-transform: translateY(-1.25rem);
             transform: translateY(-1.25rem);
   }
+  */
 
   .body-features__item:hover {
     -webkit-transform: translateY(-0.9375rem);
