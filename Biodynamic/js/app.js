@@ -4461,41 +4461,53 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
-
-    /* Yandex map */
     var myMap;
-    // Дождёмся загрузки API и готовности DOM.
     ymaps.ready(init);
-    
     function init() {
         myMap = new ymaps.Map("map", {
-            center: [47.23729, 39.715201],
+            center: [ 47.23729, 39.715201 ],
             zoom: 17,
             controls: []
         });
-
-        let placemark = new ymaps.Placemark([47.23729, 39.715201], {
-            balloonContentHeader: 'г. Ростов-на-Дону',
-            balloonContentBody: 'ул.Текучева, дом №147-149/2/1',
-            // balloonContentFooter: 'Подвал'
+        let placemark = new ymaps.Placemark([ 47.23729, 39.715201 ], {
+            balloonContentHeader: "г. Ростов-на-Дону",
+            balloonContentBody: "ул.Текучева, дом №147-149/2/1"
         }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/svg/map-marker.svg',
-            // Размеры метки.
+            iconLayout: "default#image",
+            iconImageHref: "img/svg/map-marker.svg",
             hideIconOnBalloonOpen: false,
-            iconImageSize: [34, 45],
+            iconImageSize: [ 34, 45 ],
             balloonOffset: [ 4, -53 ],
-            // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
-            iconImageOffset: [-35, -45]
+            iconImageOffset: [ -35, -45 ]
         });
         myMap.geoObjects.add(placemark);
-        myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты 
+        myMap.behaviors.disable([ "scrollZoom" ]);
     }
-    /* Yandex map */
-
+    const animItems = document.querySelectorAll("._anim-items");
+    if (animItems.length > 0) {
+        window.addEventListener("scroll", animOnScroll);
+        function animOnScroll() {
+            for (let index = 0; index < animItems.length; index++) {
+                const animItem = animItems[index];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top;
+                const animStart = 4;
+                let animItemPoint = window.innerHeight - animItemHeight / animStart;
+                if (animItemHeight > window.innerHeight) animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_active"); else if (!animItem.classList.contains("_anim-no-hide")) animItem.classList.remove("_active");
+            }
+        }
+        function offset(el) {
+            const rect = el.getBoundingClientRect(), scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return {
+                top: rect.top + scrollTop,
+                left: rect.left + scrollLeft
+            };
+        }
+        setTimeout((() => {
+            animOnScroll();
+        }), 300);
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();
