@@ -1453,15 +1453,26 @@ body::after {
   }
 }
 
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.25rem;
+}
+
 .footer .social__item {
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
   white-space: nowrap;
-}
-
-.footer .social__item:not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin: 0;
 }
 
 .footer__body {
@@ -2292,6 +2303,9 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @supports (gap: clamp( 1.875rem , 0.7386363636rem  +  5.6818181818vw , 5rem )) {
@@ -2336,6 +2350,32 @@ body::after {
   position: relative;
 }
 
+.information__slider .swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.information__slider .information__slider-button-prev,
+.information__slider .information__slider-button-next {
+  bottom: 1rem;
+  z-index: 1;
+}
+
+.information__slider .information__slider-button-prev {
+  left: 25%;
+}
+
+.information__slider .information__slider-button-next {
+  right: 25%;
+}
+
+.information__slider .swiper-button-prev {
+  background: url("../img/icons/arrow-left-white.svg") center left no-repeat;
+}
+
+.information__slider .swiper-button-next {
+  background: url("../img/icons/arrow-right-white.svg") center right no-repeat;
+}
+
 .information__slide-img img {
   max-width: 100%;
   height: 100%;
@@ -2360,28 +2400,6 @@ body::after {
 
 .information__slider-control .swiper-pagination-bullet-active {
   background-color: #fff;
-}
-
-.information .information__slider-button-prev,
-.information .information__slider-button-next {
-  bottom: 1rem;
-  z-index: 1;
-}
-
-.information .information__slider-button-prev {
-  left: 25%;
-}
-
-.information .information__slider-button-next {
-  right: 25%;
-}
-
-.information .swiper-button-prev {
-  background: url("../img/icons/arrow-left-white.svg") center left no-repeat;
-}
-
-.information .swiper-button-next {
-  background: url("../img/icons/arrow-right-white.svg") center right no-repeat;
 }
 
 .swiper {
@@ -3294,6 +3312,9 @@ body::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
   }
 }
 
