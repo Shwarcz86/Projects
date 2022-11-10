@@ -4176,6 +4176,33 @@
             },
             on: {}
         });
+        if (window.matchMedia("(max-width: 576px)").matches) if (document.querySelector(".application__slider")) new core(".application__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 2,
+            spaceBetween: 20,
+            speed: 800,
+            pagination: {
+                el: ".application__control",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".application__slider-button-prev",
+                nextEl: ".application__slider-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                390: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
@@ -4690,7 +4717,29 @@
     var parallax = new Rellax(".parallax", {
         vertical: true
     });
-    if (window.matchMedia("(max-width: 768px)").matches) parallax.destroy();
+    if (document.querySelector(".parallax")) if (window.matchMedia("(max-width: 768px)").matches) parallax.destroy();
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map("block-map", {
+            center: [ 59.940623, 30.317305 ],
+            zoom: 17,
+            controls: []
+        });
+        let placemark = new ymaps.Placemark([ 59.940623, 30.317305 ], {
+            balloonContentHeader: "Санкт-Петербург,",
+            balloonContentBody: "ул. Миллионная, д.38"
+        }, {
+            iconLayout: "default#image",
+            iconImageHref: "img/icons/map-marker.svg",
+            hideIconOnBalloonOpen: false,
+            iconImageSize: [ 60, 60 ],
+            balloonOffset: [ 4, -53 ],
+            iconImageOffset: [ -35, -45 ]
+        });
+        myMap.geoObjects.add(placemark);
+        myMap.behaviors.disable([ "scrollZoom" ]);
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();
