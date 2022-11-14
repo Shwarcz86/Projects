@@ -3056,7 +3056,7 @@ article img.aligncenter {
     float: none;
     max-width: 100%;
     padding: 0px 0px 0px 0px;
-
+  }
 }
 @media (max-width: 560px) {
   .products__item._catalog {
