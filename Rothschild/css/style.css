@@ -4457,11 +4457,11 @@ body._no-scroll {
     bottom: 20px;
   }
   .main-page__title {
-    margin: 450px 0px 15px 0px;
+    margin: 430px 0px 15px 0px;
   }
   .main-page__img {
     width: 100%;
-    top: -430px;
+    top: -440px;
     left: 50%;
     transform: translateX(-50%);
   }
