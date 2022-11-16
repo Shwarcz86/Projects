@@ -988,28 +988,31 @@ body._no-scroll {
   transition: all .5s;
 }
 .features-page__title.opacity span {
-  -webkit-animation: opacity 3s infinite;
-  -moz-animation:    opacity 3s infinite;
-  -o-animation:      opacity 3s infinite;
-  animation:         opacity 3s infinite;
+  -webkit-animation: opacity 3s linear infinite;
+  -moz-animation:    opacity 3s linear infinite;
+  -o-animation:      opacity 3s linear infinite;
+  animation:         opacity 3s linear infinite;
 }
 @-webkit-keyframes opacity {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% { color: rgb(185, 139, 140, 1); }
+  50% { color: rgba(185, 139, 140, 0); }
+  100% { color: rgba(185, 139, 140, 1); }
 }
 @-moz-keyframes opacity {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% { color: rgb(185, 139, 140, 1); }
+  50% { color: rgba(185, 139, 140, 0); }
+  100% { color: rgba(185, 139, 140, 1); }
 }
 @-o-keyframes opacity {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% { color: rgb(185, 139, 140, 1); }
+  50% { color: rgba(185, 139, 140, 0); }
+  100% { color: rgba(185, 139, 140, 1); }
 }
 @keyframes opacity {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% { color: rgb(185, 139, 140, 1); }
+  50% { color: rgba(185, 139, 140, 0); }
+  100% { color: rgba(185, 139, 140, 1); }
 }
-
 .features-page__btn {
   position: relative;
   z-index: 2;
@@ -1224,8 +1227,8 @@ body._no-scroll {
   transform: rotate(5deg);
 }
 .value-page__title.rotate::before {
-  animation: 0,9s linear 0s normal none infinite running rotate;
-  -webkit-animation: 0,9s linear 0s normal none infinite running rotate;
+  animation: 30s linear 0s normal none infinite running rotate;
+  -webkit-animation: 30s linear 0s normal none infinite running rotate;
   width: 153px;
 }
 @keyframes rotate {
