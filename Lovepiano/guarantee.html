@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221123154907">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221202140217">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -232,7 +232,7 @@
 					</div>
 					<button class="bottom-header__search _icon-search" data-popup="#popup-search"></button>
 					<div class="bottom-header__actions" data-da=".body-header__wrap,1249.98">
-						<a class="bottom-header__adjust _icon-adjust" href="#">4</a>
+						<a class="bottom-header__adjust _icon-adjust" data-popup="#popup-filter" href="#">4</a>
 						<a class="bottom-header__favorite _icon-star" href="#">12</a>
 						<a class="bottom-header__bag _icon-bag" href="#">2</a>
 					</div>
@@ -460,8 +460,380 @@
 		</div>
 	</div>
 
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20221123154907" type="text/javascript" unselectable="on" scroll="false"></script>
-	<script src="js/app.min.js?_v=20221123154907"></script>
+	<div id="popup-filter" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<div class="popup__head">
+						<h3 class="popup__title title title_inner">Фильтр</h3>
+						<button data-close type="button" class="popup__close _icon-close"></button>
+					</div>
+					<div class="filter-products" data-spollers>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow _spoller-active" data-spoller>Цена</button>
+							<div class="filter-products__content" data-range>
+								<div class="filter-products__wrapper">
+									<div class="filter-products__group">
+										<label class="filter-products__label" for="rp_1">от
+											<input class="filter-products__input" data-range-from="0" autocomplete="off" type="text" name="form[]" id="rp_1" value="300000">
+										</label>
+									</div>
+									<div class="filter-products__group">
+										<label class="filter-products__label" for="rp_2">от
+											<input class="filter-products__input" data-range-to="2300000" autocomplete="off" type="text" name="form[]" id="rp_2" value="2300000">
+										</label>
+									</div>
+								</div>
+								<div class="filter-products__range" data-range-item></div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow _spoller-active" data-spoller>Наличие</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_1-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_1-1">
+										<span class="checkbox__text">В наличии</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_1-22" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_1-22">
+										<span class="checkbox__text">Доступен для заказа</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Производитель</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_2-1">
+										<span class="checkbox__text">ALESIS</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-2">
+										<span class="checkbox__text">Artesia</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-3">
+										<span class="checkbox__text">Becker</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-4" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-4">
+										<span class="checkbox__text">CASIO</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-5" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-5">
+										<span class="checkbox__text">JONSON&CO</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-6" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-6">
+										<span class="checkbox__text">KAWAI</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-7" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-7">
+										<span class="checkbox__text">KORG</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-8" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-8">
+										<span class="checkbox__text">KURZWEIL</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-9" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-9">
+										<span class="checkbox__text">ROCKDALE</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-10" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-10">
+										<span class="checkbox__text">ROLAND</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-11" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-11">
+										<span class="checkbox__text">Ringway</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-12" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-12">
+										<span class="checkbox__text">StudioLogic</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_2-13" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_2-13">
+										<span class="checkbox__text">YAMAHA</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Корпус</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_3-1" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_3-1">
+										<span class="checkbox__text">Компактный</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_3-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_3-2">
+										<span class="checkbox__text">Корпусный</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_3-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_3-3">
+										<span class="checkbox__text">Рояль</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Уровень мастерства</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_4-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_4-1">
+										<span class="checkbox__text">Высокий</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_4-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_4-2">
+										<span class="checkbox__text">Средний</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_4-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_4-3">
+										<span class="checkbox__text">Начальный</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Цвет</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_5-1">
+										<span class="checkbox__color" style="background-color: #ffffff; border: 1px solid #c6c6c6;"></span>
+										<span class="checkbox__text">Белый</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-2">
+										<span class="checkbox__color" style="background-color: #e1e1e1;"></span>
+										<span class="checkbox__text">Белый полированный</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-3">
+										<span class="checkbox__color" style="background-color: #1f1f1f;"></span>
+										<span class="checkbox__text">Чёрный</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-4" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-4">
+										<span class="checkbox__color" style="background-color: #7b4e3a;"></span>
+										<span class="checkbox__text">Палисандр / Коричневый</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-5" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-5">
+										<span class="checkbox__color" style="background-color: #d9bd80;"></span>
+										<span class="checkbox__text">Вишня / Дуб / Орех</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-6" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-6">
+										<span class="checkbox__color" style="background-color: #000000;"></span>
+										<span class="checkbox__text">Чёрный полированный</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-7" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-7">
+										<span class="checkbox__color" style="background-color: #b1b1b1;"></span>
+										<span class="checkbox__text">Белый пепел / Ясень / Серый</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-8" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-8">
+										<span class="checkbox__color" style="background-color: #46433a;"></span>
+										<span class="checkbox__text">Тёмный орех</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-9" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-9">
+										<span class="checkbox__color" style="background-color: #8d4141;"></span>
+										<span class="checkbox__text">Красный / Махагон</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_5-10" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_5-10">
+										<span class="checkbox__color" style="background-color: #415994;"></span>
+										<span class="checkbox__text">Синий</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Полифония</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_6-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_6-1">
+										<span class="checkbox__text">Без указания</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_6-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_6-2">
+										<span class="checkbox__text">Свыше 128</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_6-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_6-3">
+										<span class="checkbox__text">До 128</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Мощность</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_7-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_7-1">
+										<span class="checkbox__text">До 20 Вт</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_7-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_7-2">
+										<span class="checkbox__text">21-40 Вт</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_7-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_7-3">
+										<span class="checkbox__text">41-100 Вт</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_7-4" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_7-4">
+										<span class="checkbox__text">Более 100 Вт</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_7-5" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_7-5">
+										<span class="checkbox__text">Опционально</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Тембры</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_8-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_8-1">
+										<span class="checkbox__text">не более 20</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_8-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_8-2">
+										<span class="checkbox__text">21-100</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_8-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_8-3">
+										<span class="checkbox__text">более 100</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__item">
+							<button class="filter-products__title _icon-arrow" data-spoller>Количество педалей</button>
+							<div class="filter-products__content">
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_9-1" data-error="Ошибка" type="checkbox" value="1" name="form[]" checked>
+									<label class="checkbox__label" for="cp_9-1">
+										<span class="checkbox__text">1, сустейн</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_9-2" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_9-2">
+										<span class="checkbox__text">3, встроенные</span>
+									</label>
+								</div>
+								<div class="filter-products__checkbox checkbox">
+									<input class="checkbox__input" id="cp_9-3" data-error="Ошибка" type="checkbox" value="1" name="form[]">
+									<label class="checkbox__label" for="cp_9-3">
+										<span class="checkbox__text">3, подключаемые</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="filter-products__buttons">
+							<button class="filter-products__button button" data-filter-submit>Применить</button>
+							<button class="filter-products__button _icon-close" data-filter-reset>Сбросить фильтры</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-video" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Wb-cu3MZh88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20221202140217" type="text/javascript" unselectable="on" scroll="false"></script>
+	<script src="js/app.min.js?_v=20221202140217"></script>
 </body>
 
 </html>

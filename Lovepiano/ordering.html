@@ -2,7 +2,7 @@
 <html lang="ru" class="submenu-open">
 
 <head>
-	<title>Детальная страница услуги</title>
+	<title>Оформление заказа</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -247,157 +247,257 @@
 							<a class="breadcrumbs__link" href="#">Главная</a>
 						</li>
 						<li class="breadcrumbs__item">
-							<a class="breadcrumbs__link" href="#">Услуги</a>
-						</li>
-						<li class="breadcrumbs__item">
-							<span class="breadcrumbs__current" href="#">Детальная страница услуги</span>
+							<span class="breadcrumbs__current" href="#">Оформление заказа</span>
 						</li>
 					</ul>
 				</nav>
 			</div>
-			<section class="page__article article">
-				<div class="article__container">
-					<article>
-						<h1>Детальная страница услуги</h1>
-						<p>
-							Сент-Экзюпери когда-то очень точно подметил: «У людей уже не хватает времени что-либо узнавать. Они покупают вещи готовыми в магазинах». Нам никогда не хотелось быть таким обычным магазином с готовыми вещами. За каждым нашим покупателем мы закрепляем менеджера, который ответит на ваши вопросы, поможет с выбором и убедится, что товар к вам доставлен, подскажет в будущем при необходимости, как получить гарантийное обслуживание. В Москве и Санкт-Петербурге покупка музыкального инструмента возможна с полным спектром услуг от наших специалистов.
-						</p>
-						<div class="article__slider swiper">
-							<div class="article__wrapper swiper-wrapper">
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt="image"></picture>
+			<section class="page__ordering ordering">
+				<div class="ordering__container">
+					<div class="ordering__head">
+						<h1 class="ordering__title title title_inner">Оформление заказа</h1>
+						<a class="ordering__link-cart" href="#">Вернуться в корзину</a>
+					</div>
+					<form class="ordering__form form-ordering" action="#" method="post">
+						<div class="form-ordering__body">
+							<div class="form-ordering__block">
+								<div class="form-ordering__head">
+									<h3 class="form-ordering__title form-ordering__title_small">Ваша контактная информация</h3>
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Как к вам обращаться?">
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="+7 ( ___ ) ___ -  __ - __  *" data-required>
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="Укажите свой E-mail">
+								</div>
+								<div class="form-ordering__text">Ваша почта необходима для отправки электронного чека</div>
+								<div class="form-ordering__checkbox checkbox">
+									<input id="co_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+									<label for="co_1" class="checkbox__label"><span class="checkbox__text checkbox__text_small">Соглашаюсь на обработку персональных данных</span></label>
+								</div>
+							</div>
+							<div class="form-ordering__block">
+								<div class="form-ordering__head">
+									<h3 class="form-ordering__title">Доставка</h3>
+									<a class="form-ordering__city" href="#">Москва</a>
+								</div>
+								<div class="form-ordering__checkbox checkbox">
+									<input id="co_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+									<label for="co_2" class="checkbox__label"><span class="checkbox__text checkbox__text_bold">Курьером</span></label>
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Улица *" data-required>
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Дом / Корпус *" data-required>
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Подъезд">
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Этаж">
+								</div>
+								<div class="form-ordering__input">
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Квартира">
+								</div>
+								<select name="form[]" data-class-modif="form">
+									<option value="1" selected>
+										Интервал доставки
+										<b>08:00 - 17:00</b>
+									</option>
+									<option value="2">
+										Интервал доставки
+										10:00 - 16:00
+									</option>
+									<option value="3">
+										Интервал доставки
+										15:00 - 18:00
+									</option>
+									<option value="4">
+										Интервал доставки
+										18:00 - 21:30
+									</option>
+								</select>
+								<div class="form-ordering__checkbox checkbox">
+									<input id="co_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<label for="co_3" class="checkbox__label"><span class="checkbox__text checkbox__text_small">Есть грузовой лифт</span></label>
+								</div>
+								<div class="form-ordering__text form-ordering__text_2">
+									Предварительная стоимость доставки:
+									<span class="form-ordering__value">1350 руб.</span>
+								</div>
+								<div class="form-ordering__checkbox checkbox">
+									<input id="co_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+									<label for="co_4" class="checkbox__label"><span class="checkbox__text checkbox__text_bold">Самовывоз <i>бесплатно</i></span></label>
+								</div>
+								<div class="form-ordering__map" id="block-map">
+									<div class="form-ordering__map-text" data-da=".form-ordering__info,576">
+										<p>
+											<b>Как добраться</b>
+											Свяжитесь с нашим консультантом заранее и согласуйте время самовывоза. Не осуществляйте самостоятельный поиск здания, склад находится на закрытой охраняемой территории. Доступ возможен исключительно в сопровождении нашего сотрудника. Фото для ознакомления.
+										</p>
+										<p>
+											м Озёрная, м Юго-Западная, м Мичуринский пр.,
+											м пр. Вернадского
+										</p>
+										<div>
+											<span>
+												<b>Телефон:
+												</b>
+												<a href="tel:84952781814">8 495 278-18-14</a>
+											</span>
+											<span>
+												<b>Часы работы:
+												</b>
+												11.00 - 13.00 (гибкий график)
+											</span>
+										</div>
 									</div>
 								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/02.webp" type="image/webp"><img src="img/article/02.jpg" alt="image"></picture>
-									</div>
+								<div class="form-ordering__info"></div>
+							</div>
+							<div class="form-ordering__block">
+								<div class="form-ordering__head">
+									<h3 class="form-ordering__title">Способ оплаты</h3>
 								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/03.webp" type="image/webp"><img src="img/article/03.jpg" alt="image"></picture>
+								<div class="form-ordering__block-box">
+									<div class="form-ordering__block-options options">
+										<div class="options__item">
+											<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+											<label for="o_1" class="options__label"><span class="options__text options__text_b1">Наличными деньгами</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_2" class="options__input" type="radio" value="2" name="option">
+											<label for="o_2" class="options__label"><span class="options__text options__text_b2">Банковской картой</span></label>
+										</div>
 									</div>
-								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/02.webp" type="image/webp"><img src="img/article/02.jpg" alt="image"></picture>
-									</div>
-								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt="image"></picture>
-									</div>
-								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/03.webp" type="image/webp"><img src="img/article/03.jpg" alt="image"></picture>
-									</div>
-								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/01.webp" type="image/webp"><img src="img/article/01.jpg" alt="image"></picture>
-									</div>
-								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/03.webp" type="image/webp"><img src="img/article/03.jpg" alt="image"></picture>
-									</div>
-								</div>
-								<div class="article__slide swiper-slide">
-									<div class="article__slide-img">
-										<picture><source srcset="img/article/02.webp" type="image/webp"><img src="img/article/02.jpg" alt="image"></picture>
+									<div class="form-ordering__block-options options">
+										<div class="options__item">
+											<input id="o_3" class="options__input" checked type="radio" value="3" name="option">
+											<label for="o_3" class="options__label"><span class="options__text options__text_b3">По счёту в банке</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_4" class="options__input" type="radio" value="4" name="option">
+											<label for="o_4" class="options__label"><span class="options__text options__text_b4">В рассрочку / кредит</span></label>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="article__slider-control control"></div>
-							<div class="article__slider-button-prev swiper-button-prev"></div>
-							<div class="article__slider-button-next swiper-button-next"></div>
-						</div>
-						<h2>Заголовок h2</h2>
-						<p>
-							Сент-Экзюпери когда-то очень точно подметил: «У людей уже не хватает времени что-либо узнавать. Они покупают вещи готовыми в магазинах». Нам никогда не хотелось быть таким обычным магазином с готовыми вещами. За каждым нашим покупателем мы закрепляем менеджера, который ответит на ваши вопросы, поможет с выбором и убедится, что товар к вам доставлен, подскажет в будущем при необходимости, как получить гарантийное обслуживание. В Москве и Санкт-Петербурге покупка музыкального инструмента возможна с полным спектром услуг от наших специалистов.
-						</p>
-						<p>
-							За каждым нашим покупателем мы закрепляем менеджера, который ответит на ваши вопросы, поможет с выбором и убедится, что товар к вам доставлен, подскажет в будущем при необходимости, как получить гарантийное обслуживание. В Москве и Санкт-Петербурге покупка музыкального инструмента возможна с полным спектром услуг от наших специалистов.
-						</p>
-						<picture><source srcset="img/article/04.webp" type="image/webp"><img src="img/article/04.jpg" alt="image"></picture>
-						<h3>Заголовок h3</h3>
-						<p>
-							Сент-Экзюпери когда-то очень точно подметил: «У людей уже не хватает времени что-либо узнавать. Они покупают вещи готовыми в магазинах». Нам никогда не хотелось быть таким обычным магазином с готовыми вещами.
-						</p>
-						<div>
-							<ul>
-								<li>7 дней при сохранении </li>
-								<li>Товарного вида
-									<ul>
-										<li>Потребительских свойств</li>
-										<li>Потребительских свойств</li>
-										<li>Потребительских свойств</li>
-									</ul>
-								</li>
-								<li>Потребительских свойств</li>
-							</ul>
-							<ol>
-								<li>7 дней при сохранении </li>
-								<li>Товарного вида
-									<ol>
-										<li>Потребительских свойств</li>
-										<li>Потребительских свойств</li>
-										<li>Потребительских свойств</li>
-									</ol>
-								</li>
-								<li>Потребительских свойств</li>
-							</ol>
-						</div>
-						<h4>Заголовок h4</h4>
-						<p>
-							Нам никогда не хотелось быть таким обычным магазином с готовыми вещами. За каждым нашим покупателем мы закрепляем менеджера, который ответит на ваши вопросы, поможет с выбором и убедится, что товар к вам доставлен, подскажет в будущем при необходимости, как получить гарантийное обслуживание. В Москве и Санкт-Петербурге покупка музыкального инструмента возможна с полным спектром услуг от наших специалистов.
-						</p>
-						<p>
-							Сент-Экзюпери когда-то очень точно подметил: «У людей уже не хватает времени что-либо узнавать. Они покупают вещи готовыми в магазинах». Нам никогда не хотелось быть таким обычным магазином с готовыми вещами. За каждым нашим покупателем мы закрепляем менеджера, который ответит на ваши вопросы, поможет с выбором и убедится, что товар к вам доставлен, подскажет в будущем при необходимости, как получить гарантийное обслуживание. В Москве и Санкт-Петербурге покупка музыкального инструмента возможна с полным спектром услуг от наших специалистов.
-						</p>
-						<table>
-							<tr>
-								<th>Название колонки</th>
-								<th>Название колонки</th>
-								<th>Название колонки</th>
-							</tr>
-							<tr>
-								<td>Значение</td>
-								<td>Значение</td>
-								<td>Значение</td>
-							</tr>
-							<tr>
-								<td>Значение</td>
-								<td>Значение</td>
-								<td>Значение</td>
-							</tr>
-							<tr>
-								<td>Значение</td>
-								<td>Значение</td>
-								<td>Значение</td>
-							</tr>
-						</table>
-					</article>
-					<aside class="article__sidebar sidebar-article">
-						<div class="sidebar-article__body">
-							<div class="sidebar-article__title">Условия оказания услуги:</div>
-							<ul class="sidebar-article__list">
-								<li class="sidebar-article__item">
-									<b>Дистанционный способ</b>
-									<span>7 дней при сохранении товарного вида и потребительских свойств</span>
-									<span>Стоимость товара возвращается в течение 10 дней после возврата товара, стоимость расходов на доставку и иных услуг не возвращаются.
+							<div class="form-ordering__block">
+								<div class="form-ordering__head">
+									<h3 class="form-ordering__title">Дополнительные услуги</h3>
+								</div>
+								<div class="form-ordering__items">
+									<div class="form-ordering__item">
+										<div class="form-ordering__checkbox checkbox">
+											<input id="co_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="co_9" class="checkbox__label"><span class="checkbox__text checkbox__text_b">Подарочная упаковка</span></label>
+										</div>
+										<span class="form-ordering__price">от 10 990 ₽</span>
+									</div>
+									<div class="form-ordering__item">
+										<div class="form-ordering__checkbox checkbox">
+											<input id="co_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="co_10" class="checkbox__label"><span class="checkbox__text checkbox__text_b">Подъём пианино на лифте и по лестнице</span></label>
+										</div>
+										<span class="form-ordering__price">от 7 990 ₽</span>
+									</div>
+									<div class="form-ordering__item">
+										<div class="form-ordering__checkbox checkbox">
+											<input id="co_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="co_11" class="checkbox__label"><span class="checkbox__text checkbox__text_b">Сборка инструмента</span></label>
+										</div>
+										<span class="form-ordering__price">от 20 990 ₽</span>
+									</div>
+									<div class="form-ordering__item">
+										<div class="form-ordering__checkbox checkbox">
+											<input id="co_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="co_12" class="checkbox__label"><span class="checkbox__text checkbox__text_b">Расширенная гарантия</span></label>
+										</div>
+										<span class="form-ordering__price">от 100 990 ₽</span>
+									</div>
+								</div>
+								<div class="form-ordering__label">
+									<img src="img/icons/info-circle-2.svg" alt="icon">
+									<span>
+										Расчёт стоимости доп.услуг будет озвучен менеджером в момент оформления заказа. Порядок цен указан в разделе "Услуги"
 									</span>
-								</li>
-								<li class="sidebar-article__item">
-									<b>Розничная купля-продажа</b>
-									<span>14 дней при сохранении товарного вида и потребительских свойств</span>
-									<span>Стоимость товара возвращается в течение 10 дней после возврата товара, стоимость расходов на доставку и иных услуг не возвращаются.</span>
-								</li>
-							</ul>
+								</div>
+							</div>
+							<div class="form-ordering__block">
+								<div class="form-ordering__head">
+									<h3 class="form-ordering__title">Комментарий</h3>
+								</div>
+								<textarea placeholder="Оставьте комментарий к заказу"></textarea>
+							</div>
 						</div>
-					</aside>
+						<div class="form-ordering__sidebar sidebar-form">
+							<div class="sidebar-form__title">
+								В вашем заказе <span data-order-value>4</span> товара:
+							</div>
+							<div class="sidebar-form__items">
+								<div class="sidebar-form__item">
+									<div class="sidebar-form__body">
+										<div class="sidebar-form__item-name">
+											Цифровой рояль Yamaha CVP 809 GP чёрный полированный
+										</div>
+										<span class="sidebar-form__item-price">87 990 ₽</span>
+									</div>
+									<button class="sidebar-form__item-remove _icon-close" type="button"></button>
+								</div>
+								<div class="sidebar-form__item">
+									<div class="sidebar-form__body">
+										<div class="sidebar-form__item-name">
+											Цифровой рояль Yamaha CVP 809 GP
+										</div>
+										<span class="sidebar-form__item-price">87 990 ₽</span>
+									</div>
+									<button class="sidebar-form__item-remove _icon-close" type="button"></button>
+								</div>
+								<div class="sidebar-form__item">
+									<div class="sidebar-form__body">
+										<div class="sidebar-form__item-name">
+											Цифровой рояль Yamaha CVP 809 GP
+										</div>
+										<span class="sidebar-form__item-price">87 990 ₽</span>
+									</div>
+									<button class="sidebar-form__item-remove _icon-close" type="button"></button>
+								</div>
+								<div class="sidebar-form__item">
+									<div class="sidebar-form__body">
+										<div class="sidebar-form__item-name">
+											Цифровой рояль Yamaha CVP 809 GP чёрный полированный
+										</div>
+										<span class="sidebar-form__item-price">87 990 ₽</span>
+									</div>
+									<button class="sidebar-form__item-remove _icon-close" type="button"></button>
+								</div>
+							</div>
+							<div class="sidebar-form__price">
+								<div class="sidebar-form__service">
+									<span class="sidebar-form__service-text">Товары</span>
+									<span class="sidebar-form__service-price">45 490 ₽</span>
+								</div>
+								<div class="sidebar-form__service">
+									<span class="sidebar-form__service-text">До ближайшего терминала транспортной компании
+									</span>
+									<span class="sidebar-form__service-price">10 000 ₽</span>
+								</div>
+								<div class="sidebar-form__service">
+									<span class="sidebar-form__service-text">Обрешётка инструмента</span>
+									<span class="sidebar-form__service-price">10 000 ₽</span>
+								</div>
+							</div>
+							<div class="sidebar-form__total">
+								Итого
+								<span class="sidebar-form__total-price">200 387 990 ₽</span>
+							</div>
+							<button class="sidebar-form__button button" type="submit">оформить заказ</button>
+						</div>
+					</form>
 				</div>
 			</section>
 			<button class="_icon-arrow" id="top-btn">
