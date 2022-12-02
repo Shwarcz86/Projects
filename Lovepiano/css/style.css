@@ -10144,10 +10144,6 @@ body::after {
     display: block;
   }
 
-  .tabs-card-body__box {
-    padding-bottom: 0.9375rem;
-  }
-
   .thumbs-card__button-next {
     bottom: 1.25rem;
   }
