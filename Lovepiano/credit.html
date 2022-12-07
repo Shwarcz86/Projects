@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221206131747">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221207115540">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1085,18 +1085,62 @@
 		</div>
 	</div>
 
-	<div id="popup-video" aria-hidden="true" class="popup">
+	<div id="popup-buy" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__container">
 				<div class="popup__content">
-					<button data-close type="button" class="popup__close"></button>
-					<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Wb-cu3MZh88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					<div class="popup__head">
+						<h3 class="popup__title">Купить в 1 клик
+						</h3>
+						<button type="button" class="popup__close _icon-close" data-close></button>
+					</div>
+					<form class="form-modal" action="#">
+						<div class="form-modal__input">
+							<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ФИО">
+						</div>
+						<div class="form-modal__input">
+							<input class="input" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" data-required>
+						</div>
+						<div class="form-modal__checkbox checkbox">
+							<input id="m_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+							<label for="m_1" class="checkbox__label"><span class="checkbox__text">Согласен на обработку данных</span></label>
+						</div>
+						<button class="form-modal__button button" type="submit">Заказать</button>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20221206131747" type="text/javascript" unselectable="on" scroll="false"></script>
-	<script src="js/app.min.js?_v=20221206131747"></script>
+
+	<div id="popup-credit" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__container">
+				<div class="popup__content">
+					<div class="popup__head">
+						<h3 class="popup__title">Рассрочка / кредит
+						</h3>
+						<button type="button" class="popup__close _icon-close" data-close></button>
+					</div>
+					<form class="form-modal" action="#">
+						<div class="form-modal__input">
+							<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ФИО">
+						</div>
+						<div class="form-modal__input">
+							<input class="input" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" data-required>
+						</div>
+						<textarea placeholder="Комментарий"></textarea>
+						<div class="form-modal__checkbox checkbox">
+							<input id="m_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]" checked>
+							<label for="m_1" class="checkbox__label"><span class="checkbox__text">Согласен на обработку данных</span></label>
+						</div>
+						<button class="form-modal__button button" type="submit">отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20221207115540" type="text/javascript" unselectable="on" scroll="false"></script>
+	<script src="js/app.min.js?_v=20221207115540"></script>
 </body>
 
 </html>
