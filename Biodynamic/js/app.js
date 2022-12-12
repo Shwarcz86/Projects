@@ -4269,10 +4269,6 @@
             speed: 1e3,
             parallax: true,
             direction: "vertical",
-            autoplay: {
-                delay: 3e3,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: ".main-slider__control",
                 clickable: true
