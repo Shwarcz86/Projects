@@ -737,7 +737,6 @@ body._no-scroll {
 }
 .main-page__bg img {
   width: 100%;
-  /* height: 100%; */
   object-fit: cover;
 }
 .main-page__img {
@@ -3165,6 +3164,9 @@ body._no-scroll {
   .appointment-page__img img {
     max-width: 100%;
   }
+  .main-page__bg img {
+    height: 100%;
+  }
 }
 @media (max-width: 1480px) {
   .meditation-page__block:first-child {
@@ -3614,7 +3616,7 @@ body._no-scroll {
     box-shadow: none;
   }
   .bottom-header__navigation {
-    padding: 20px 0;
+    padding: 80px 0;
     overflow-y: auto;
   }
   .bottom-header._active {
@@ -3675,7 +3677,7 @@ body._no-scroll {
     width: 550px;
   }
   .main-page__social {
-    top: 85px;
+    top: 124px;
   }
   .main-page__subtitle {
     margin: 0px 0px 60px 0px;
