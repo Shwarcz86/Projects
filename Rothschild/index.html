@@ -82,11 +82,13 @@
     <main class="page">
       <section class="page__main main-page">
         <div class="container">
-          <h1 class="title-1 main-page__title">
-            Помогаю найти <br> <span class="brown">силы и мотивацию</span> жить 
-            полной и счастливой жизнью
-          </h1>
-          <span class="main-page__subtitle">онлайн по всему миру или очно в центре Праги</span>
+          <div class="main-page__inner">
+            <h1 class="title-1 main-page__title">
+              Помогаю найти <br> <span class="brown">силы и мотивацию</span> жить 
+              полной и счастливой жизнью
+            </h1>
+            <span class="main-page__subtitle">онлайн по всему миру или очно в центре Праги</span>
+          </div>
           <div class="main-page__body">
             <div class="main-page__body-text">
               Пройдите тест из 6 вопросов
@@ -97,7 +99,7 @@
               <svg class="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.05 85.9" preserveAspectRatio="none"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{stroke:#ede5e5;stroke-miterlimit:10;stroke-width:0.75px;}</style></defs><path class="cls-1" d="M165.3,0H36.8A4.78,4.78,0,0,0,33,1.8L1.1,39.8a5,5,0,0,0,0,6.3L33,84.1a4.94,4.94,0,0,0,3.8,1.8H165.2a4.78,4.78,0,0,0,3.8-1.8l31.9-38a5,5,0,0,0,0-6.3L169,1.8A4.59,4.59,0,0,0,165.3,0Z" transform="translate(0.02)"/><path class="cls-1" d="M165.3,0H36.8A4.78,4.78,0,0,0,33,1.8L1.1,39.8a5,5,0,0,0,0,6.3L33,84.1a4.94,4.94,0,0,0,3.8,1.8H165.2a4.78,4.78,0,0,0,3.8-1.8l31.9-38a5,5,0,0,0,0-6.3L169,1.8A4.59,4.59,0,0,0,165.3,0Z" transform="translate(0.02)"/><path class="cls-2" d="M159.4,6.4H42.8a4.33,4.33,0,0,0-3.4,1.5l-29,32.4a4,4,0,0,0,0,5.4L39.3,78a4.68,4.68,0,0,0,3.4,1.5H159.2a4.33,4.33,0,0,0,3.4-1.5l28.9-32.4a4,4,0,0,0,0-5.4L162.7,7.9A4.27,4.27,0,0,0,159.4,6.4Z" transform="translate(0.02)"/></svg>
               <figcaption>Анна Ротшильд</figcaption>
               <blockquote>
-               <span> Работа над собой — самая сложная,</span>
+              <span> Работа над собой — самая сложная,</span>
                 но и самая прекрасная, она приносит 
                 результаты и стоит того.
               </blockquote>
@@ -167,6 +169,9 @@
               </svg>
             </a>
           </div>
+        </div>
+        <div class="main-page__bg">
+          <img src="img/main-bg.png" alt="" />
         </div>
       </section>
       <div class="page__about about-page">
@@ -2070,7 +2075,10 @@
   <script src="js/libs/fancybox/jquery.fancybox.js"></script>
   <script src="js/libs/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/libs/dynamic_adapt/dynamic_adapt.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>	
   <script src="js/main.js"></script>
+  <script src="js/animate.js"></script>
 </body>
 
 </html>
