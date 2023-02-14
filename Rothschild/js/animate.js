@@ -134,7 +134,7 @@ if (window.matchMedia('(min-width: 1024.98px)').matches) {
     })
     gsap.to('.main-page__img img', {
         scrollTrigger: {
-            trigger: '.main-page', 
+            trigger: '.main-page',
             start: 'top top',
             scrub: true,
         },
@@ -143,7 +143,7 @@ if (window.matchMedia('(min-width: 1024.98px)').matches) {
 
     gsap.to('.about-page__img img', {
         scrollTrigger: {
-            trigger: '.about-page', 
+            trigger: '.about-page',
             start: '100 center',
             scrub: true,
         },
@@ -260,10 +260,10 @@ if (window.matchMedia('(min-width: 1024.98px)').matches) {
         opacity: 0,
         xPercent: -30,
     })
-    
+
     gsap.to('.consultation-page__img img', {
         scrollTrigger: {
-            trigger: '.consultation-page', 
+            trigger: '.consultation-page',
             start: 'top center',
             scrub: true,
         },
@@ -272,7 +272,7 @@ if (window.matchMedia('(min-width: 1024.98px)').matches) {
 
     gsap.to('.feedback-page__img img', {
         scrollTrigger: {
-            trigger: '.feedback-page', 
+            trigger: '.feedback-page',
             start: '400 center',
             scrub: true,
         },
@@ -282,7 +282,7 @@ if (window.matchMedia('(min-width: 1024.98px)').matches) {
 
     gsap.to('.biography-page__img img', {
         scrollTrigger: {
-            trigger: '.biography-page', 
+            trigger: '.biography-page',
             start: 'top center',
             scrub: true,
         },
@@ -311,5 +311,176 @@ if (window.matchMedia('(min-width: 1024.98px)').matches) {
         yPercent: 30,
     })
 
-    
+    gsap.from('.products-page__tabs-container', {
+        scrollTrigger: {
+            trigger: '.products-page',
+            start: '0 center',
+            end: '+=200px',
+            scrub: true,
+        },
+        opacity: 0,
+        yPercent: 30,
+    })
+
+    gsap.from('.practice-page__column:last-child', {
+        scrollTrigger: {
+            trigger: '.practice-page',
+            start: '0 center',
+            end: '+=300px',
+            scrub: true,
+        },
+        opacity: 0,
+        xPercent: 30,
+    })
+
+    gsap.from('.webinar-page .container', {
+        scrollTrigger: {
+            trigger: '.webinar-page',
+            start: '-200 center',
+            end: '+=300px',
+            scrub: true,
+        },
+        opacity: 0,
+        scale: 0.5,
+        yPercent: 50,
+    })
+
+    gsap.from('.meditation-page__slider', {
+        scrollTrigger: {
+            trigger: '.meditation-page',
+            start: 'top center',
+            end: '+=300px',
+            scrub: true,
+        },
+        opacity: 0,
+        scale: 0,
+        rotate: 180,
+    })
+
+    gsap.from('.retreat-page__tabs-container', {
+        scrollTrigger: {
+            trigger: '.retreat-page',
+            start: '0 center',
+            end: '+=200px',
+            scrub: true,
+        },
+        opacity: 0,
+        yPercent: 30,
+    })
+
+    // const items = gsap.utils.toArray('.social-page__slider-item')
+
+    // gsap.from(items, {
+    //     scrollTrigger: {
+    //         trigger: '.social-page',
+    //         start: '-300px center',
+    //         end: '+=800px',
+    //         scrub: true,
+    //     },
+    //     xPercent:  -100 * (items.length - 1),
+    // })
+
+    gsap.from('.social-page__gallery', {
+        scrollTrigger: {
+            trigger: '.social-page',
+            start: '-300px center',
+            end: '+=700px',
+            scrub: true,
+        },
+        xPercent: -100,
+    })
+
+    gsap.from('.appointment-page__title', {
+        scrollTrigger: {
+            trigger: '.appointment-page',
+            start: '-300px center',
+            end: '+=700px',
+            scrub: true,
+        },
+        scale: 0.5,
+        opacity: 0,
+    })
+
+    gsap.from('.questions-page__items', {
+        scrollTrigger: {
+            trigger: '.questions-page',
+            start: '0 center',
+            end: '+=300px',
+            scrub: true,
+        },
+        opacity: 0,
+        xPercent: -10,
+    })
+
+    gsap.from('.questions-page__form ', {
+        scrollTrigger: {
+            trigger: '.questions-page',
+            start: '0 center',
+            end: '+=300px',
+            scrub: true,
+        },
+        opacity: 0,
+        xPercent: 20,
+    })
+
+
+    /*
+    function initHeaderTilt() {
+        document.querySelector('main').addEventListener('mousemove', moveImages)
+    }
+
+    function moveImages(e) {
+
+        const { offsetX, offsetY, target } = e;
+        const { clientWidth, clientHeight } = target;
+
+
+        // get 0 0 in the center
+        const xPos = (offsetX / clientWidth) - 0.5;
+        const yPos = (offsetY / clientHeight) - 0.5;
+
+        const leftImages = gsap.utils.toArray('.features-page__column:nth-child(2)');
+        const rightImages = gsap.utils.toArray('.hg__right .hg__image');
+
+        const modifier = (index) => index * 1.2 + 0.5;
+
+        // движение трех картинок слева
+        leftImages.forEach((image, index) => {
+            gsap.to(image, {
+                duration: 1.2,
+                x: xPos * 20 * modifier(index),
+                y: yPos * 30 * modifier(index),
+                rotationY: xPos * 40,
+                rotationX: yPos * 10,
+                ease: 'power3.out',
+                transformOrigin: "center",
+                transformPerspective: 1500
+            });
+        });
+
+        // движение трех картинок справа
+        rightImages.forEach((image, index) => {
+            gsap.to(image, {
+                duration: 1.2,
+                x: xPos * 20 * modifier(index),
+                y: -yPos * 30 * modifier(index),
+                rotationY: xPos * 40,
+                rotationX: yPos * 10,
+                ease: 'power3.easeOut',
+                transformOrigin: "center",
+                transformPerspective: 1500
+            })
+        })
+    }
+
+    function init() {
+        initHeaderTilt();
+    }
+
+    window.addEventListener('load', function () {
+        init();
+    })
+
+    */
+
 }
